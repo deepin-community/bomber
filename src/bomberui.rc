@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui xmlns="http://www.kde.org/standards/kxmlgui/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     name="Bomber"
+     version="3"
+     xsi:schemaLocation="http://www.kde.org/standards/kxmlgui/1.0
+                         http://www.kde.org/standards/kxmlgui/1.0/kxmlgui.xsd">
+    <MenuBar>
+        <Menu name="settings">
+            <Action name="toggle_sound" append="save_merge"/>
+        </Menu>
+    </MenuBar>
+    <ToolBar name="mainToolBar">
+        <text>Main Toolbar</text>
+        <Action name="game_new"/>
+        <Action name="game_pause"/>
+        <Separator/>
+        <Action name="game_highscores"/>
+        <Separator/>
+        <Action name="toggle_sound"/>
+    </ToolBar>
+    <ActionProperties>
+        <Action shortcut="Space" name="drop_bomb"/>
+    </ActionProperties>
+</gui>
